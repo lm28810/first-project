@@ -9,13 +9,13 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter >
-      <Box sx={{backgroundColor: '#000'}}>
+      <Box sx={{ backgroundColor: '#000' }}>
         <NavBar />
         <Routes>
-          <Route pathe="/" exact element={<Feed /> } />
-          <Route pathe="/video/:id" exact element={<VideoDetail />} />
-          <Route pathe="/channel/:id" element={<ChannelDetail /> } />
-          <Route pathe="/search/:searchTerm" element={<SearchFeed />} />
+          <Route path="/" exact element={<Feed /> } />
+          <Route path="/video/:id" exact element={<VideoDetail />} />
+          <Route path="/channel/:id" element={<ChannelDetail /> } />
+          <Route path="/search/:searchTerm" element={<SearchFeed />} />
 </Routes>
         
     </Box>
